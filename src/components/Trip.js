@@ -6,7 +6,7 @@ const Trip = ({text,distance}) => (
 
 Trip.propTypes = {
   text: PropTypes.string.isRequired,
-  distance: PropTypes.string.isRequired
+  distance: PropTypes.number.isRequired
 }
 
 export default Trip

@@ -1,9 +1,9 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import Trip from './Trip'
 
 const TripList = ({trips}) => (
   <ol>
-    {trips.map(aTrip =>
+    {trips.trips.map(aTrip =>
     <Trip
       key={aTrip.id}
       text={aTrip.text}

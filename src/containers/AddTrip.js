@@ -10,7 +10,8 @@ let AddTrip = ({dispatch}) => {
     <div>
       <form onSubmit={e => {
         e.preventDefault()
-        dispatch(addTrip(text.value, distance.value))
+        let distanceNumber = parseInt(distance.value)
+        dispatch(addTrip(text.value, distanceNumber))
         text.value = ''
         distance.value = ''
       }}>
@@ -21,7 +22,7 @@ let AddTrip = ({dispatch}) => {
           distance = node
         }} />
         <button type="submit">
-          Add Todo
+          Add Trip
         </button>
       </form>
     </div>
